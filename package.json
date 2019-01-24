@@ -1,0 +1,28 @@
+{
+  "name": "design",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "node dev-server.js",
+    "server": "node server.js"
+  },
+  "author": "Marc Barbeau",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "express": "^4.16.4",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-middleware": "^3.5.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
