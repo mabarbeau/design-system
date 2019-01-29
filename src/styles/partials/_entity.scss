@@ -4,6 +4,9 @@
 	height: 100%;
 	position: relative;
 	margin: auto;
+	p{
+		margin: 0;
+	}
 }
 .entity-image{
 	top: 50%;
@@ -14,6 +17,7 @@
 	min-height: 100%;
 	min-width: 100%;
 	position: absolute;
+	background-color: #f5f5f5;
 }
 .entity-image-wrap{
 	position: relative;
@@ -26,23 +30,24 @@
 	flex-grow: 1;
 	flex-direction: column;
 	padding: 10px;
-	border: 1px solid #353577;
+	border: 1px solid $border-color;
 }
 .entity-footer{
 	margin-top: auto;
 }
 .entity-row{
-	// &:extend(.clearfix all);
+	margin-bottom: 10px;
+}
+.ellipsis{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 100%;
+	overflow: hidden;
+}
+.entity-right{
+	float: right;
 }
 .entity-left,
 .entity-right{
-	float: left;
-	width: 50%;
-}
-.entity-left{
-	text-align: left;
-	clear: both;
-}
-.entity-right{
-	text-align: right;
+	margin: 0;
 }
