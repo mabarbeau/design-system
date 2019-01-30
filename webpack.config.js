@@ -15,33 +15,41 @@ module.exports = {
     hot: true
   },
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: [
-        {
-          loader: "style-loader"
-        },
-        {
-          loader: "css-loader",
-          options: {
-            sourceMap: true
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+              includePaths: ['./node_modules']
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+               plugins: () => [autoprefixer()]
+            }
           }
-        },
-        {
-          loader: 'postcss-loader',
-          options: {
-             plugins: () => [autoprefixer()]
-          }
-        },
-        {
-          loader: "sass-loader",
-          options: {
-            sourceMap: true,
-            includePaths: ['./node_modules']
-          }
-        }
-      ]
-    }]
+        ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      }
+    ]
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
