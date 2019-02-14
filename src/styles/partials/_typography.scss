@@ -27,7 +27,7 @@ small, .subtitle{
 .body2{
     @include mdc-typography('body2');
 }
-.btn, button{
+.button, button{
     @include mdc-typography('button');
 }
 .overline{
