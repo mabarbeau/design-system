@@ -173,33 +173,57 @@
 						Inputs
 					</h3>
 				</article>
-				<form class="" action="" method="post">
-					<input name="firstname" type="text">
+				<form class="mdc-layout-grid__inner" action="" method="post">
 
-					<select name="cars">
-						<option value="volvo">Volvo</option>
-						<option value="saab">Saab</option>
-						<option value="fiat">Fiat</option>
-						<option value="audi">Audi</option>
-					</select>
+					<div class="mdc-layout-grid__cell--span-3">
+						<label class="shown" for="firstname">First name</label>
+						<input id="firstname" placeholder="First Name" class="form-control" name="firstname" type="text">
+					</div>
 
-					<select name="cars" multiple>
-						<option value="volvo">Volvo</option>
-						<option value="saab">Saab</option>
-						<option value="fiat">Fiat</option>
-						<option value="audi">Audi</option>
-					</select>
+					<div class="mdc-layout-grid__cell--span-3">
+						<div class="select">
+							<label class="shown" for="firstname">Select</label>
+							<select class="form-control" name="cars">
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+								<option value="fiat">Fiat</option>
+								<option value="audi">Audi</option>
+							</select>
+						</div>
+					</div>
 
-					<textarea name="message" rows="10" cols="30"></textarea>
+					<div class="mdc-layout-grid__cell--span-3">
+						<div class="select select-multiple">
+							<label class="shown" for="firstname">Select Multiple</label>
+							<select class="form-control" name="cars" size="1">
+								<option selected value="volvo">Select Multiple</option>
+								<option disabled value="volvo">Volvo</option>
+								<option disabled value="saab">Saab</option>
+								<option value="fiat">Fiat</option>
+								<option value="audi">Audi</option>
+							</select>
+							<ul>
+								<li><input type="hidden" name="cars[]" value="Volvo">Volvo<i class="material-icons">clear</i></li>
+								<li><input type="hidden" name="cars[]" value="Saab">Saab<i class="material-icons">clear</i></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mdc-layout-grid__cell--span-3">
+						<label class="shown" for="firstname">Datalist</label>
+						<input placeholder="Browsers" list="browsers" class="form-control">
+						<datalist id="browsers">
+							<option value="Internet Explorer">
+							<option value="Firefox">
+							<option value="Chrome">
+							<option value="Opera">
+							<option value="Safari">
+						</datalist>
+					</div>
 
-					<input list="browsers">
-					<datalist id="browsers">
-						<option value="Internet Explorer">
-						<option value="Firefox">
-						<option value="Chrome">
-						<option value="Opera">
-						<option value="Safari">
-					</datalist>
+					<div class="mdc-layout-grid__cell--span-6">
+						<label class="shown" for="firstname">Textarea</label>
+						<textarea class="form-control" placeholder="Textarea" name="message" rows="4"></textarea>
+					</div>
 
 				</form>
 			</section>
