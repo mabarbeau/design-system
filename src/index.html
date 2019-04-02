@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<div class="container">
+		<div class="mdc-layout-grid">
 			<header class="page-header">
 				<h1>
 					Design system
@@ -61,34 +61,34 @@
 					<h3>
 						Color
 					</h3>
-					<div class="mdc-layout-grid">
-						<div class="mdc-layout-grid__inner">
-							<div class="mdc-layout-grid__cell-span-6 primary">primary</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-primary">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 primary-light">primary-light</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-primary-light">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 primary-dark">primary-dark</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-primary-dark">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 secondary">secondary</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-secondary">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 secondary-light">secondary-light</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-secondary-light">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 secondary-dark">secondary-dark</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-secondary-dark">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 primary-text">primary-text</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-primary-text">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 secondary-text">secondary-text</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-secondary-text">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 white">white</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-white">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 gray-light">gray-light</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-gray-light">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 gray">gray</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-gray">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 gray-dark">gray-dark</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-gray-dark">&nbsp;</div>
-							<div class="mdc-layout-grid__cell-span-6 black">black</div>
-							<div class="mdc-layout-grid__cell-span-6 bg-black">&nbsp;</div>
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+							<div class="primary">primary</div>
+							<div class="bg-primary">&nbsp;</div>
+							<div class="primary-light">primary-light</div>
+							<div class="bg-primary-light">&nbsp;</div>
+							<div class="primary-dark">primary-dark</div>
+							<div class="bg-primary-dark">&nbsp;</div>
+							<div class="secondary">secondary</div>
+							<div class="bg-secondary">&nbsp;</div>
+							<div class="secondary-light">secondary-light</div>
+							<div class="bg-secondary-light">&nbsp;</div>
+							<div class="secondary-dark">secondary-dark</div>
+							<div class="bg-secondary-dark">&nbsp;</div>
+							<div class="primary-text">primary-text</div>
+							<div class="bg-primary-text">&nbsp;</div>
+							<div class="secondary-text">secondary-text</div>
+							<div class="bg-secondary-text">&nbsp;</div>
+							<div class="white">white</div>
+							<div class="bg-white">&nbsp;</div>
+							<div class="gray-light">gray-light</div>
+							<div class="bg-gray-light">&nbsp;</div>
+							<div class="gray">gray</div>
+							<div class="bg-gray">&nbsp;</div>
+							<div class="gray-dark">gray-dark</div>
+							<div class="bg-gray-dark">&nbsp;</div>
+							<div class="black">black</div>
+							<div class="bg-black">&nbsp;</div>
 						</div>
 					</div>
 				</article>
@@ -155,14 +155,43 @@
 						Inputs
 					</h3>
 				</article>
+				<form class="" action="" method="post">
+					<input name="firstname" type="text">
+
+					<select name="cars">
+						<option value="volvo">Volvo</option>
+						<option value="saab">Saab</option>
+						<option value="fiat">Fiat</option>
+						<option value="audi">Audi</option>
+					</select>
+
+					<select name="cars" multiple>
+						<option value="volvo">Volvo</option>
+						<option value="saab">Saab</option>
+						<option value="fiat">Fiat</option>
+						<option value="audi">Audi</option>
+					</select>
+
+					<textarea name="message" rows="10" cols="30"></textarea>
+
+					<input list="browsers">
+					<datalist id="browsers">
+						<option value="Internet Explorer">
+						<option value="Firefox">
+						<option value="Chrome">
+						<option value="Opera">
+						<option value="Safari">
+					</datalist>
+
+				</form>
 			</section>
 			<section>
 				<h2>
 					Cells
 				</h2>
 				<hr>
-				<div class="row">
-					<div class="col">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell">
 						<article class="entity">
 							<div class="entity-image-wrap">
 								<img src="http://lorempixel.com/500/200/" alt="" class="entity-image">
@@ -199,7 +228,7 @@
 							</div>
 						</article>
 					</div>
-					<div class="col">
+					<div class="mdc-layout-grid__cell">
 						<article class="entity">
 							<div class="entity-image-wrap">
 								<img src="http://lorempixel.com/200/500/" alt="" class="entity-image">
@@ -236,7 +265,7 @@
 							</div>
 						</article>
 					</div>
-					<div class="col">
+					<div class="mdc-layout-grid__cell">
 						<article class="entity">
 							<div class="entity-image-wrap">
 								<img src="http://lorempixel.com/500/250/" alt="" class="entity-image">
