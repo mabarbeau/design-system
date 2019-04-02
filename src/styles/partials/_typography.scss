@@ -1,35 +1,35 @@
 @import "@material/typography/mdc-typography";
 
 .h1, h1{
-    @include mdc-typography('headline1');
+	@include mdc-typography('headline1');
 }
 .h2, h2{
-    @include mdc-typography('headline2');
+	@include mdc-typography('headline2');
 }
 .h3, h3{
-    @include mdc-typography('headline3');
+	@include mdc-typography('headline3');
 }
 .h4, h4{
-    @include mdc-typography('headline4');
+	@include mdc-typography('headline4');
 }
 .h5, h5{
-    @include mdc-typography('headline5');
+	@include mdc-typography('headline5');
 }
 .h6, h6{
-    @include mdc-typography('headline6');
+	@include mdc-typography('headline6');
 }
 small, .subtitle{
-    @include mdc-typography('subtitle1');
+	@include mdc-typography('subtitle1');
 }
 .body, body{
-    @include mdc-typography('body1');
+	@include mdc-typography('body1');
 }
 .body2{
-    @include mdc-typography('body2');
+	@include mdc-typography('body2');
 }
 .button, button{
-    @include mdc-typography('button');
+	@include mdc-typography('button');
 }
 .overline{
-    @include mdc-typography('overline');
+	@include mdc-typography('overline');
 }
