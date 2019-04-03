@@ -1,6 +1,3 @@
-$font-family-heading: 'Cormorant', serif;
-$font-family-body: 'Lora', serif;
-
 $mdc-typography-font-family: $font-family-heading;
 
 $mdc-typography-base: (
@@ -152,7 +149,7 @@ $mdc-typography-styles: mdc-typography-set-styles_(
 small, .subtitle{
 	@include mdc-typography('subtitle1');
 }
-.body, body{
+.body, body, label, .form-control{
 	@include mdc-typography('body1');
 }
 .body2{
