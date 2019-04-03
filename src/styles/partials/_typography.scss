@@ -1,4 +1,7 @@
-$mdc-typography-font-family: 'Cormorant', serif;
+$font-family-heading: 'Cormorant', serif;
+$font-family-body: 'Lora', serif;
+
+$mdc-typography-font-family: $font-family-heading;
 
 $mdc-typography-base: (
   font-family: $mdc-typography-font-family,
@@ -83,6 +86,7 @@ $mdc-typography-styles: mdc-typography-set-styles_(
       text-transform: inherit
     ),
     body1: (
+      font-family: $font-family-body,
       font-size: 1rem, // 16sp
       line-height: 1.5rem, // 24sp
       font-weight: map-get($mdc-typography-font-weight-values, regular),
