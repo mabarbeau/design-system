@@ -7,12 +7,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Cormorant|Lora" rel="stylesheet">
 	</head>
 	<body>
+		<header class="page-header bg-gray-dark">
+			<h1>
+				Design system
+			</h1>
+		</header>
 		<div class="mdc-layout-grid">
-			<header class="page-header">
-				<h1>
-					Design system
-				</h1>
-			</header>
 			<section>
 				<h2>
 					Atoms
@@ -65,48 +65,48 @@
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">primary</div>
-								<div class="mdc-layout-grid__cell bg-primary">text</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">primary</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-primary">bg-primary</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">primary-light</div>
-								<div class="mdc-layout-grid__cell bg-primary-light">text</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">primary-light</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-primary-light">bg-primary-light</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">primary-dark</div>
-								<div class="mdc-layout-grid__cell bg-primary-dark">text</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">primary-dark</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-primary-dark">bg-primary-dark</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">secondary</div>
-								<div class="mdc-layout-grid__cell bg-secondary">text</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">secondary</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-secondary">bg-secondary</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">secondary-light</div>
-								<div class="mdc-layout-grid__cell bg-secondary-light">text</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">secondary-light</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-secondary-light">bg-secondary-light</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">secondary-dark</div>
-								<div class="mdc-layout-grid__cell bg-secondary-dark">text</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">secondary-dark</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-secondary-dark">bg-secondary-dark</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">white</div>
-								<div class="mdc-layout-grid__cell bg-white">&nbsp;</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">white</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-white">bg-white</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">gray-light</div>
-								<div class="mdc-layout-grid__cell bg-gray-light">&nbsp;</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">gray-light</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-gray-light">bg-gray-light</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">gray</div>
-								<div class="mdc-layout-grid__cell bg-gray">&nbsp;</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">gray</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-gray">bg-gray</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">gray-dark</div>
-								<div class="mdc-layout-grid__cell bg-gray-dark">&nbsp;</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">gray-dark</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-gray-dark">bg-gray-dark</div>
 							</div>
 							<div class="mdc-layout-grid__inner">
-								<div class="mdc-layout-grid__cell">black</div>
-								<div class="mdc-layout-grid__cell bg-black">&nbsp;</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">black</div>
+								<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 text-center bg-black">bg-black</div>
 							</div>
 						</div>
 					</div>
@@ -148,6 +148,65 @@
 					Molecules
 				</h2>
 				<hr>
+				<article id="inputs">
+					<h3>
+						Inputs
+					</h3>
+					<form class="mdc-layout-grid__inner" action="" method="post">
+
+						<div class="mdc-layout-grid__cell--span-3">
+							<label class="shown" for="firstname">First name</label>
+							<input id="firstname" placeholder="First Name" class="form-control" name="firstname" type="text">
+						</div>
+
+						<div class="mdc-layout-grid__cell--span-3">
+							<div class="select">
+								<label class="shown" for="firstname">Select</label>
+								<select class="form-control" name="cars">
+									<option value="volvo">Volvo</option>
+									<option value="saab">Saab</option>
+									<option value="fiat">Fiat</option>
+									<option value="audi">Audi</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="mdc-layout-grid__cell--span-3">
+							<div class="select select-multiple">
+								<label class="shown" for="firstname">Select Multiple</label>
+								<select class="form-control" name="cars" size="1">
+									<option selected value="volvo">Select Multiple</option>
+									<option disabled value="volvo">Volvo</option>
+									<option disabled value="saab">Saab</option>
+									<option value="fiat">Fiat</option>
+									<option value="audi">Audi</option>
+								</select>
+								<ul>
+									<li><input type="hidden" name="cars[]" value="Volvo">Volvo<i class="material-icons">clear</i></li>
+									<li><input type="hidden" name="cars[]" value="Saab">Saab<i class="material-icons">clear</i></li>
+								</ul>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__cell--span-3">
+							<label class="shown" for="firstname">Datalist</label>
+							<input placeholder="Browsers" list="browsers" class="form-control">
+							<datalist id="browsers">
+								<option value="Internet Explorer">
+								<option value="Firefox">
+								<option value="Chrome">
+								<option value="Opera">
+								<option value="Safari">
+							</datalist>
+						</div>
+
+						<div class="mdc-layout-grid__cell--span-6">
+							<label class="shown" for="firstname">Textarea</label>
+							<textarea class="form-control" placeholder="Textarea" name="message" rows="4"></textarea>
+						</div>
+
+					</form>
+				</article>
+
 				<article id="buttons">
 					<h3>
 						Buttons
@@ -169,64 +228,6 @@
 						</i>
 					</button>
 				</article>
-				<article id="inputs">
-					<h3>
-						Inputs
-					</h3>
-				</article>
-				<form class="mdc-layout-grid__inner" action="" method="post">
-
-					<div class="mdc-layout-grid__cell--span-3">
-						<label class="shown" for="firstname">First name</label>
-						<input id="firstname" placeholder="First Name" class="form-control" name="firstname" type="text">
-					</div>
-
-					<div class="mdc-layout-grid__cell--span-3">
-						<div class="select">
-							<label class="shown" for="firstname">Select</label>
-							<select class="form-control" name="cars">
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
-								<option value="fiat">Fiat</option>
-								<option value="audi">Audi</option>
-							</select>
-						</div>
-					</div>
-
-					<div class="mdc-layout-grid__cell--span-3">
-						<div class="select select-multiple">
-							<label class="shown" for="firstname">Select Multiple</label>
-							<select class="form-control" name="cars" size="1">
-								<option selected value="volvo">Select Multiple</option>
-								<option disabled value="volvo">Volvo</option>
-								<option disabled value="saab">Saab</option>
-								<option value="fiat">Fiat</option>
-								<option value="audi">Audi</option>
-							</select>
-							<ul>
-								<li><input type="hidden" name="cars[]" value="Volvo">Volvo<i class="material-icons">clear</i></li>
-								<li><input type="hidden" name="cars[]" value="Saab">Saab<i class="material-icons">clear</i></li>
-							</ul>
-						</div>
-					</div>
-					<div class="mdc-layout-grid__cell--span-3">
-						<label class="shown" for="firstname">Datalist</label>
-						<input placeholder="Browsers" list="browsers" class="form-control">
-						<datalist id="browsers">
-							<option value="Internet Explorer">
-							<option value="Firefox">
-							<option value="Chrome">
-							<option value="Opera">
-							<option value="Safari">
-						</datalist>
-					</div>
-
-					<div class="mdc-layout-grid__cell--span-6">
-						<label class="shown" for="firstname">Textarea</label>
-						<textarea class="form-control" placeholder="Textarea" name="message" rows="4"></textarea>
-					</div>
-
-				</form>
 			</section>
 			<section>
 				<h2>

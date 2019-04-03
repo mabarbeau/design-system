@@ -53,11 +53,6 @@
 .bg-primary-dark{
 	background-color: $primary-dark;
 }
-.bg-primary,
-.bg-primary-light,
-.bg-primary-dark{
-	color: $primary-text;
-}
 
 /**
  * Secondary
@@ -90,6 +85,13 @@
 .bg-secondary-light{
 	color: $secondary-text;
 }
-.bg-secondary-dark{
+
+
+.bg-primary,
+.bg-primary-light,
+.bg-primary-dark,
+.bg-secondary-dark,
+.bg-gray-dark,
+.bg-black{
 	color: $white;
 }

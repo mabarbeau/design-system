@@ -164,3 +164,12 @@ small, .subtitle{
 .overline{
 	@include mdc-typography('overline');
 }
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
