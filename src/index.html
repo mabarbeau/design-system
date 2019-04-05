@@ -158,6 +158,10 @@
 							<label class="shown" for="firstname">First name</label>
 							<input id="firstname" placeholder="First Name" class="form-control" name="firstname" type="text">
 						</div>
+						<div class="mdc-layout-grid__cell--span-3">
+							<label for="firstname">Last name</label>
+							<input id="firstname" placeholder="Last Name" class="form-control" name="lastname" type="text">
+						</div>
 
 						<div class="mdc-layout-grid__cell--span-3">
 							<div class="select">
@@ -211,22 +215,116 @@
 					<h3>
 						Buttons
 					</h3>
-					<button type="button" name="button" class="mdc-button btn-primary">
-						<i class="mdc-button__icon material-icons">
-							add
-						</i>
-						<span class="mdc-button__label">
-							Foo
-						</span>
-					</button>
-					<button type="button" name="button" class="mdc-button btn-primary">
-						<span class="mdc-button__label">
-							Foo
-						</span>
-						<i class="mdc-button__icon material-icons">
-							arrow_drop_down
-						</i>
-					</button>
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell">
+							<div>
+								<h3 class="mdc-typography--subtitle1">Text Button</h3>
+								<button class="mdc-button undefined">
+									<span class="mdc-button__label">Default</span>
+								</button>
+								<button class="mdc-button mdc-button--dense undefined">
+									<span class="mdc-button__label">Dense</span>
+								</button>
+								<button class="mdc-button undefined">
+									<i class="material-icons mdc-button__icon">favorite</i>
+									<span class="mdc-button__label">Icon</span>
+								</button>
+							</div>
+							<div>
+								<h3 class="mdc-typography--subtitle1">Raised Button</h3>
+								<button class="mdc-button mdc-button--raised">
+									<span class="mdc-button__label">Default</span>
+								</button>
+								<button class="mdc-button mdc-button--dense mdc-button--raised">
+									<span class="mdc-button__label">Dense</span>
+								</button>
+								<button class="mdc-button mdc-button--raised">
+									<i class="material-icons mdc-button__icon">favorite</i>
+									<span class="mdc-button__label">Icon</span>
+								</button>
+							</div>
+							<div>
+								<h3 class="mdc-typography--subtitle1">Unelevated Button</h3>
+								<button class="mdc-button mdc-button--unelevated">
+									<span class="mdc-button__label">Default</span>
+								</button>
+								<button class="mdc-button mdc-button--dense mdc-button--unelevated">
+									<span class="mdc-button__label">Dense</span>
+								</button>
+								<button class="mdc-button mdc-button--unelevated">
+									<i class="material-icons mdc-button__icon">favorite</i>
+									<span class="mdc-button__label">Icon</span>
+								</button>
+							</div>
+							<div>
+								<h3 class="mdc-typography--subtitle1">Outlined Button</h3>
+								<button class="mdc-button mdc-button--outlined">
+									<span class="mdc-button__label">Default</span>
+								</button>
+								<button class="mdc-button mdc-button--dense mdc-button--outlined">
+									<span class="mdc-button__label">Dense</span>
+								</button>
+								<button class="mdc-button mdc-button--outlined">
+									<i class="material-icons mdc-button__icon">favorite</i>
+									<span class="mdc-button__label">Icon</span>
+								</button>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__cell">
+							<div>
+								<h3 class="mdc-typography--subtitle1">Text Button</h3>
+								<button class="mdc-button secondary undefined">
+									<span class="mdc-button__label">Default</span>
+								</button>
+								<button class="mdc-button secondary mdc-button--dense undefined">
+									<span class="mdc-button__label">Dense</span>
+								</button>
+								<button class="mdc-button secondary undefined">
+									<i class="material-icons mdc-button__icon">favorite</i>
+									<span class="mdc-button__label">Icon</span>
+								</button>
+							</div>
+							<div>
+								<h3 class="mdc-typography--subtitle1">Raised Button</h3>
+								<button class="mdc-button secondary mdc-button--raised">
+									<span class="mdc-button__label">Default</span>
+								</button>
+								<button class="mdc-button secondary mdc-button--dense mdc-button--raised">
+									<span class="mdc-button__label">Dense</span>
+								</button>
+								<button class="mdc-button secondary mdc-button--raised">
+									<i class="material-icons mdc-button__icon">favorite</i>
+									<span class="mdc-button__label">Icon</span>
+								</button>
+							</div>
+							<div>
+								<h3 class="mdc-typography--subtitle1">Unelevated Button</h3>
+								<button class="mdc-button secondary mdc-button--unelevated">
+									<span class="mdc-button__label">Default</span>
+								</button>
+								<button class="mdc-button secondary mdc-button--dense mdc-button--unelevated">
+									<span class="mdc-button__label">Dense</span>
+								</button>
+								<button class="mdc-button secondary mdc-button--unelevated">
+									<i class="material-icons mdc-button__icon">favorite</i>
+									<span class="mdc-button__label">Icon</span>
+								</button>
+							</div>
+							<div>
+								<h3 class="mdc-typography--subtitle1">Outlined Button</h3>
+								<button class="mdc-button secondary mdc-button--outlined">
+									<span class="mdc-button__label">Default</span>
+								</button>
+								<button class="mdc-button secondary mdc-button--dense mdc-button--outlined">
+									<span class="mdc-button__label">Dense</span>
+								</button>
+								<button class="mdc-button secondary mdc-button--outlined">
+									<i class="material-icons mdc-button__icon">favorite</i>
+									<span class="mdc-button__label">Icon</span>
+								</button>
+							</div>
+						</div>
+					</div>
 				</article>
 			</section>
 			<section>
@@ -254,20 +352,20 @@
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									</p>
 								</div>
-								<div class="entity-footer">
-									<div class="entity-right">
-										<button type="button" name="button" class="mdc-button btn-primary">
-											<i class="mdc-button__icon material-icons">
-												add
-											</i>
-											<span class="mdc-button__label">
-												Foo
-											</span>
-										</button>
-									</div>
-									<div class="entity-left">
-										<a class="btn btn-default" href="#">Add to compare</a>
-									</div>
+								<div class="entity-footer text-right">
+									<button type="button" name="button" class="mdc-button mdc-button--dense">
+										<span class="mdc-button__label">
+											Foo
+										</span>
+									</button>
+									<button type="button" name="button" class="mdc-button mdc-button--dense mdc-button--raised">
+										<i class="mdc-button__icon material-icons">
+											add
+										</i>
+										<span class="mdc-button__label">
+											Bar
+										</span>
+									</button>
 								</div>
 							</div>
 						</article>
@@ -291,20 +389,20 @@
 										Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 									</p>
 								</div>
-								<div class="entity-footer">
-									<div class="entity-right">
-										<button type="button" name="button" class="mdc-button btn-primary">
-											<i class="mdc-button__icon material-icons">
-												add
-											</i>
-											<span class="mdc-button__label">
-												Foo
-											</span>
-										</button>
-									</div>
-									<div class="entity-left">
-										<a class="btn btn-default" href="#">Add to compare</a>
-									</div>
+								<div class="entity-footer text-right">
+									<button type="button" name="button" class="mdc-button mdc-button--dense">
+										<span class="mdc-button__label">
+											Foo
+										</span>
+									</button>
+									<button type="button" name="button" class="mdc-button mdc-button--dense mdc-button--raised">
+										<i class="mdc-button__icon material-icons">
+											add
+										</i>
+										<span class="mdc-button__label">
+											Bar
+										</span>
+									</button>
 								</div>
 							</div>
 						</article>
@@ -328,20 +426,20 @@
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 									</p>
 								</div>
-								<div class="entity-footer">
-									<div class="entity-right">
-										<button type="button" name="button" class="mdc-button btn-primary">
-											<i class="mdc-button__icon material-icons">
-												add
-											</i>
-											<span class="mdc-button__label">
-												Foo
-											</span>
-										</button>
-									</div>
-									<div class="entity-left">
-										<a class="btn btn-default" href="#">Add to compare</a>
-									</div>
+								<div class="entity-footer text-right">
+									<button type="button" name="button" class="mdc-button mdc-button--dense">
+										<span class="mdc-button__label">
+											Foo
+										</span>
+									</button>
+									<button type="button" name="button" class="mdc-button mdc-button--dense mdc-button--raised">
+										<i class="mdc-button__icon material-icons">
+											add
+										</i>
+										<span class="mdc-button__label">
+											Bar
+										</span>
+									</button>
 								</div>
 							</div>
 						</article>

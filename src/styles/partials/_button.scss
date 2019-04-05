@@ -1,12 +1,25 @@
+$mdc-button-height: 60px;
+$mdc-button-horizontal-padding: 17px;
+$mdc-button-contained-horizontal-padding: 17px;
+$mdc-dense-button-height: 45px;
+
 @import "@material/button/mdc-button";
 
-.mdc-button{
-	@include mdc-button-shape-radius(100%);
-	@include mdc-button-horizontal-padding(12px);
+.mdc-button {
+	@include mdc-button-shape-radius(0%);
 }
-
-.btn-primary {
-	@include mdc-button-container-fill-color($primary)
-	@include mdc-button-ink-color($primary-text);
-	@include mdc-states($white);
+.mdc-button.secondary {
+  @include mdc-button-container-fill-color(transparent);
+  @include mdc-button-ink-color(secondary);
+  @include mdc-states(secondary);
+}
+.mdc-button--raised.secondary,
+.mdc-button--unelevated.secondary {
+  @include mdc-button-container-fill-color(secondary);
+  @include mdc-button-ink-color(on-secondary);
+  @include mdc-states(on-secondary);
+}
+.mdc-button--outlined.secondary {
+  @include mdc-button-outline-width(2px);
+  @include mdc-button-outline-color(secondary);
 }
