@@ -12,7 +12,7 @@ $mdc-dense-button-height: 45px;
 // postcss-bem-linter: define button
 .btn {
   @include mdc-button-base_;
-  @include mdc-button-shape-radius(small);
+  @include mdc-button-shape-radius(0);
   @include mdc-button-container-fill-color(transparent);
   @include mdc-button-ink-color(primary);
   @include mdc-states(primary);
@@ -69,24 +69,19 @@ svg.btn__icon {
 .btn--dense {
   @include mdc-button--dense_;
 }
-// postcss-bem-linter: end
 
-
-.btn {
-	@include mdc-button-shape-radius(0%);
-}
-.btn.secondary {
+.btn.btn--secondary {
   @include mdc-button-container-fill-color(transparent);
   @include mdc-button-ink-color(secondary);
   @include mdc-states(secondary);
 }
-.btn--raised.secondary,
-.btn--unelevated.secondary {
+.btn--raised.btn--secondary,
+.btn--unelevated.btn--secondary {
   @include mdc-button-container-fill-color(secondary);
   @include mdc-button-ink-color(on-secondary);
   @include mdc-states(on-secondary);
 }
-.btn--outlined.secondary {
+.btn--outlined.btn--secondary {
   @include mdc-button-outline-width(2px);
   @include mdc-button-outline-color(secondary);
 }
