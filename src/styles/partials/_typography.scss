@@ -122,46 +122,45 @@ $mdc-typography-styles: mdc-typography-set-styles_(
 
 @import "@material/typography/mixins";
 
-.mdc-typography {
-  @include mdc-typography-base;
-}
-
 @each $style in map-keys($mdc-typography-styles) {
   .#{$style} {
     @include mdc-typography($style);
   }
 }
+h1, h2, h3, h4, h5, h6{
+  margin: 1em 0 .25em 0;
+}
 h1{
-	@include mdc-typography('h1');
+  @include mdc-typography('h1');
 }
 h2{
-	@include mdc-typography('h2');
+  @include mdc-typography('h2');
 }
 h3{
-	@include mdc-typography('h3');
+  @include mdc-typography('h3');
 }
 h4{
-	@include mdc-typography('h4');
+  @include mdc-typography('h4');
 }
 h5{
-	@include mdc-typography('h5');
+  @include mdc-typography('h5');
 }
 h6{
-	@include mdc-typography('h6');
+  @include mdc-typography('h6');
 }
 small{
-	@include mdc-typography('subtitle');
+  @include mdc-typography('subtitle');
 }
 body, label, .form-control{
-	@include mdc-typography('body1');
+  @include mdc-typography('body1');
 }
 
 .text-left{
-	text-align: left;
+  text-align: left;
 }
 .text-right{
-	text-align: right;
+  text-align: right;
 }
 .text-center{
-	text-align: center;
+  text-align: center;
 }
