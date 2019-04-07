@@ -110,6 +110,7 @@ $mdc-typography-styles: mdc-typography-set-styles_(
       text-transform: uppercase
     ),
     overline: (
+      font-family: $font-family-body,
       font-size: .75rem, // 12sp
       line-height: 2rem, // 32sp
       font-weight: map-get($mdc-typography-font-weight-values, medium),
