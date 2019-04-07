@@ -1,4 +1,5 @@
 import './styles/main.scss';
+import './styles/demo.scss';
 
 import {MDCRipple} from '@material/ripple';
 

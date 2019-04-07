@@ -1,0 +1,41 @@
+@import "_variables";
+
+body{
+  margin: 0;
+  background-color: $white;
+}
+*{
+  box-sizing: border-box;
+}
+section{
+  padding: 0 0 4em 0;
+}
+section header{
+  text-align: center;
+  padding: 4em 0;
+  background: $gray-light;
+}
+section header > h2{
+  display: inline-block;
+  margin: auto;
+  padding: 0 15px;
+  margin: 0;
+  &::after{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 5px;
+    content: "";
+    display: block;
+    height: 1px;
+    background: $black;
+    border-bottom: 1px solid $primary;
+  }
+}
+.page-header{
+  padding: 100px 10px 120px 10px;
+  margin: 0;
+  text-align: center;
+}
+#color .grid__cell{
+  padding: 10px 0;
+}
