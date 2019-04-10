@@ -113,18 +113,21 @@ svg.btn__icon {
   @include mdc-button--dense_;
 }
 
-.btn.btn--secondary {
-  @include mdc-button-container-fill-color(transparent);
-  @include mdc-button-ink-color(secondary);
-  @include mdc-states(secondary);
+@mixin button($name, $color, $on-color) {
+  .btn.btn--#{$name} {
+    @include mdc-button-ink-color($color);
+    @include mdc-states($color);
+  }
+  .btn--raised.btn--#{$name},
+  .btn--unelevated.btn--#{$name} {
+    @include mdc-button-container-fill-color($color);
+    @include mdc-button-ink-color($on-color);
+    @include mdc-states($on-color);
+  }
+  .btn--outlined.btn--#{$name} {
+    @include mdc-button-outline-width(2px);
+    @include mdc-button-outline-color($color);
+  }
 }
-.btn--raised.btn--secondary,
-.btn--unelevated.btn--secondary {
-  @include mdc-button-container-fill-color(secondary);
-  @include mdc-button-ink-color(on-secondary);
-  @include mdc-states(on-secondary);
-}
-.btn--outlined.btn--secondary {
-  @include mdc-button-outline-width(2px);
-  @include mdc-button-outline-color(secondary);
-}
+@include button('secondary', secondary, on-secondary);
+// @include button('danger', danger, on-danger);

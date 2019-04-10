@@ -1,90 +1,31 @@
+@mixin color($name, $color) {
+	.#{$name}{
+		color: $color;
+	}
+	.bg-#{$name}{
+		background-color: $color;
+	}
+}
 /**
  * Colors
  */
-.white{
-	color: $white;
-}
-.bg-white{
-	background-color: $white;
-}
-.gray-light{
-	color: $gray-light;
-}
-.bg-gray-light{
-	background-color: $gray-light;
-}
-.gray{
-	color: $gray;
-}
-.bg-gray{
-	background-color: $gray;
-}
-.gray-dark{
-	color: $gray-dark;
-}
-.bg-gray-dark{
-	background-color: $gray-dark;
-}
-.black{
-	color: $black;
-}
-.bg-black{
-	background-color: $black;
-}
+ @include color('white', $white);
+ @include color('gray-light', $gray-light);
+ @include color('gray', $gray);
+ @include color('gray-dark', $gray-dark);
+ @include color('black', $black);
 
-/**
- * Primary
- */
-.primary{
-	color: $primary;
-}
-.bg-primary{
-	background-color: $primary;
-}
-.primary-light{
-	color: $primary-light;
-}
-.bg-primary-light{
-	background-color: $primary-light;
-}
-.primary-dark{
-	color: $primary-dark;
-}
-.bg-primary-dark{
-	background-color: $primary-dark;
-}
+ @include color('primary', $primary);
+ @include color('primary-light', $primary-light);
+ @include color('primary-dark', $primary-dark);
 
-/**
- * Secondary
- */
-.secondary{
-	color: $secondary;
-}
-.bg-secondary{
-	background-color: $secondary;
-}
-.secondary-light{
-	color: $secondary-light;
-}
-.bg-secondary-light{
-	background-color: $secondary-light;
-}
-.secondary-dark{
-	color: $secondary-dark;
-}
-.bg-secondary-dark{
-	background-color: $secondary-dark;
-}
-.bg-primary-text{
-	background-color: $primary-text;
-}
-.bg-secondary-text{
-	background-color: $secondary-text;
-}
-.bg-secondary,
-.bg-secondary-light{
-	color: $secondary-text;
-}
+ @include color('secondary', $secondary);
+ @include color('secondary-light', $secondary-light);
+ @include color('secondary-dark', $secondary-dark);
+
+ @include color('danger', $danger);
+ @include color('danger-light', $danger-light);
+ @include color('danger-dark', $danger-dark);
 
 
 .bg-primary,
@@ -92,6 +33,8 @@
 .bg-primary-dark,
 .bg-secondary-dark,
 .bg-gray-dark,
+.bg-danger,
+.bg-danger-dark,
 .bg-black{
 	color: $white;
 }
