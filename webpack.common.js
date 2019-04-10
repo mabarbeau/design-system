@@ -1,18 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
-  mode: 'development',
   entry: {
     app: './src/index.js'
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist',
-    hot: true
   },
   module: {
     rules: [
@@ -24,14 +17,10 @@ module.exports = {
           },
           {
             loader: "css-loader",
-            options: {
-              sourceMap: true
-            }
           },
           {
             loader: "sass-loader",
             options: {
-              sourceMap: true,
               includePaths: ['./node_modules']
             }
           },
@@ -56,15 +45,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
-    new webpack.HotModuleReplacementPlugin()
   ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
-  },
-  mode: 'development',
-  optimization: {
-    usedExports: true
   }
 };
