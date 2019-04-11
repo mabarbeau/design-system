@@ -1,4 +1,4 @@
-.entity{
+.card{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -8,7 +8,7 @@
 		margin: 0;
 	}
 }
-.entity-image{
+.card-image{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -19,23 +19,23 @@
 	position: absolute;
 	background-color: $gray-light;
 }
-.entity-image-wrap{
+.card-image-wrap{
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 	padding-top: 75%;
 }
-.entity-info{
+.card-info{
 	display: flex;
 	flex-grow: 1;
 	flex-direction: column;
 	padding: 10px;
 	border: 1px solid $border-color;
 }
-.entity-footer{
+.card-footer{
 	margin-top: auto;
 }
-.entity-row{
+.card-row{
 	margin-bottom: 10px;
 }
 .ellipsis{
@@ -45,10 +45,10 @@
 	overflow: hidden;
  	display: block;
 }
-.entity-right{
+.card-right{
 	float: right;
 }
-.entity-left,
-.entity-right{
+.card-left,
+.card-right{
 	margin: 0;
 }
